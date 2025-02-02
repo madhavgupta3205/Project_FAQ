@@ -1,3 +1,4 @@
+
 import express from 'express';
 import { createFaq, getFaqs, updateFaq, deleteFaq } from '../controllers/faqController.js';
 import { auth } from '../middleware/auth.js';

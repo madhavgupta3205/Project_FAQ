@@ -7,7 +7,7 @@ export const translateText = async (text, targetLang) => {
     }
 
     // Add delay to avoid rate limiting
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     const result = await translate(text, { to: targetLang });
     return result.text;
